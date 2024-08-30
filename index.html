@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pavel-portfolio</title>
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <!--// CUSTOM LINK/// -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha384-…"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="loader">
+      <i class="fa-solid fa-spinner fa-spin fa-2xl"></i>
+    </div>
+    <div class="main-container">
+      <!-- ///////////NAVBAR////////// -->
+      <aside class="header-left">
+        <div class="nav-brand nav-content">
+          <a class="logo">PAUL</a>
+          <div class="menu-icon" id="menuIcon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </div>
+
+        <div class="nav-container" id="navContainer">
+          <ul class="nav-links" id="navItems">
+            <li class="home">
+              <a href="#HOME" class="nav-home">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="1.5em"
+                    viewBox="0 0 576 512"
+                  >
+                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                      d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c.2 35.5-28.5 64.3-64 64.3H326.4L288 448l80.8-67.3c7.8-6.5 7.6-18.6-.4-24.9L250.6 263.2c-14.6-11.5-33.8 7-22.8 22L288 368l-85.5 71.2c-6.1 5-7.5 13.8-3.5 20.5L230.4 512H128.1c-35.3 0-64-28.7-64-64V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L416 100.7V64c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32V185l52.8 46.4c8 7 12 15 11 24z"
+                    />
+                  </svg>
+                </div>
+                <div>HOME</div>
+              </a>
+            </li>
+            <!--  -->
+            <li>
+              <a href="#ABOUT">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="1.5em"
+                    viewBox="0 0 576 512"
+                  >
+                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                      d="M512 80c8.8 0 16 7.2 16 16V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16H512zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM208 256a64 64 0 1 0 0-128 64 64 0 1 0 0 128zm-32 32c-44.2 0-80 35.8-80 80c0 8.8 7.2 16 16 16H304c8.8 0 16-7.2 16-16c0-44.2-35.8-80-80-80H176zM376 144c-13.3 0-24 10.7-24 24s10.7 24 24 24h80c13.3 0 24-10.7 24-24s-10.7-24-24-24H376zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24h80c13.3 0 24-10.7 24-24s-10.7-24-24-24H376z"
+                    />
+                  </svg>
+                </div>
+                <div>ABOUT ME</div></a
+              >
+            </li>
+            <!--  -->
+            <li>
+              <a href="#SERVICES"
+                ><div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="1.5em"
+                    viewBox="0 0 512 512"
+                  >
+                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                      d="M216 64c-13.3 0-24 10.7-24 24s10.7 24 24 24h16v33.3C119.6 157.2 32 252.4 32 368H480c0-115.6-87.6-210.8-200-222.7V112h16c13.3 0 24-10.7 24-24s-10.7-24-24-24H256 216zM24 400c-13.3 0-24 10.7-24 24s10.7 24 24 24H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H24z"
+                    />
+                  </svg>
+                </div>
+                <div>SERVICES</div></a
+              >
+            </li>
+            <!--  -->
+            <li>
+              <a href="#PORTFOLIO">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="1.5em"
+                    viewBox="0 0 512 512"
+                  >
+                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                      d="M184 48H328c4.4 0 8 3.6 8 8V96H176V56c0-4.4 3.6-8 8-8zm-56 8V96H64C28.7 96 0 124.7 0 160v96H192 320 512V160c0-35.3-28.7-64-64-64H384V56c0-30.9-25.1-56-56-56H184c-30.9 0-56 25.1-56 56zM512 288H320v32c0 17.7-14.3 32-32 32H224c-17.7 0-32-14.3-32-32V288H0V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V288z"
+                    />
+                  </svg>
+                </div>
+                <div>PORTFOLIO</div></a
+              >
+            </li>
+            <!--  -->
+            <li>
+              <a href="#BLOG">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="1.5em"
+                    viewBox="0 0 512 512"
+                  >
+                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                      d="M192 32c0 17.7 14.3 32 32 32c123.7 0 224 100.3 224 224c0 17.7 14.3 32 32 32s32-14.3 32-32C512 128.9 383.1 0 224 0c-17.7 0-32 14.3-32 32zm0 96c0 17.7 14.3 32 32 32c70.7 0 128 57.3 128 128c0 17.7 14.3 32 32 32s32-14.3 32-32c0-106-86-192-192-192c-17.7 0-32 14.3-32 32zM96 144c0-26.5-21.5-48-48-48S0 117.5 0 144V368c0 79.5 64.5 144 144 144s144-64.5 144-144s-64.5-144-144-144H128v96h16c26.5 0 48 21.5 48 48s-21.5 48-48 48s-48-21.5-48-48V144z"
+                    />
+                  </svg>
+                </div>
+                <div>BLOG</div>
+              </a>
+            </li>
+            <!--  -->
+            <li>
+              <a href="#CONTACT"
+                ><div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="1.5em"
+                    viewBox="0 0 512 512"
+                  >
+                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                      d="M96 0C60.7 0 32 28.7 32 64V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H96zM208 288h64c44.2 0 80 35.8 80 80c0 8.8-7.2 16-16 16H144c-8.8 0-16-7.2-16-16c0-44.2 35.8-80 80-80zm-32-96a64 64 0 1 1 128 0 64 64 0 1 1 -128 0zM512 80c0-8.8-7.2-16-16-16s-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16V80zM496 192c-8.8 0-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16V208c0-8.8-7.2-16-16-16zm16 144c0-8.8-7.2-16-16-16s-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16V336z"
+                    />
+                  </svg>
+                </div>
+                <div>CONTACT</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <!-- ///////////NAVEND////////// -->
+      <!-- ///////////HEADER SECTION////////// -->
+      <div class="header-right">
+        <!--///HERO-1///  -->
+        <section class="hero-section" id="HOME">
+          <div class="text-h">
+            <h5 class="text-h5">Hello there...</h5>
+            <h1 class="text-h1">Paul Dammy</h1>
+            <div id="text" class="typing-text"></div>
+            <p class="hero-p">
+              The namics of how users interact with interactive elements within
+              a user interface flow chart based on container proportion.
+            </p>
+            <a href="" class="work m-btn">MY WORK</a>
+            <a href="" class="hire m-btn">HIRE ME</a>
+          </div>
+        </section>
+        <!-- 1 END -->
+
+        <!-- HERO-2 -->
+        <section class="hero-sec-2" id="ABOUT">
+          <!--  -->
+          <div class="section-title">
+            <div class="me-section" id="header-about">
+              <h3>ABOUT ME</h3>
+              <hr />
+              <p class="hero-p h-about">
+                A LEAD UX & UI DESIGNER BASED IN NIGERIA
+              </p>
+            </div>
+            <div class="container-grid">
+              <article class="el-grid-1">
+                <div class="social-icon">
+                  <a href="">
+                    <svg
+                      id="fb-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height=".8em"
+                      viewBox="0 0 320 512"
+                      style="fill: white"
+                    >
+                      <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                      <path
+                        d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                      />
+                    </svg>
+                  </a>
+                  <!-- 2 -->
+                  <a href=""
+                    ><svg
+                      class="icon-link"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height=".7em"
+                      viewBox="0 0 512 512"
+                      style="fill: white"
+                    >
+                      <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                      <path
+                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                      />
+                    </svg>
+                  </a>
+                  <!-- 3 -->
+                  <a href="">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height=".7em"
+                      viewBox="0 0 448 512"
+                      class="icon-link"
+                      style="fill: white"
+                    >
+                      <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                      <path
+                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                      />
+                    </svg>
+                  </a>
+                  <!-- 4 -->
+                  <a href=""
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height=".7em"
+                      viewBox="0 0 448 512"
+                      style="fill: white"
+                      class="icon-link"
+                    >
+                      <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                      <path
+                        d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </article>
+              <article class="el-grid-2 about-me">
+                <h4 class=" ">I'M Paul Dammy</h4>
+                <p class="text-h6">
+                  A Lead <span class="theme-color">UX &amp; UI</span> designer
+                  based in <span class="theme-color">NIGERIA</span>
+                </p>
+                <p class="about-text">
+                  I design and develop services for customers of all sizes,
+                  specializing in creating stylish, modern websites, web
+                  services and online stores. My passion is to design digital
+                  user experiences through the bold interface and meaningful
+                  interactions. Check out my Portfolio
+                </p>
+
+                <div class="row about-list">
+                  <div class="col-md-6">
+                    <div class="media">
+                      <label>Residence</label>
+                      <p>Nigeria</p>
+                    </div>
+                    <div class="media">
+                      <label>Address</label>
+                      <p>Ota, Ogun State</p>
+                    </div>
+                    <div class="media">
+                      <label>Phone</label>
+                      <p>+234 807 0837 156</p>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div class="col-md-6">
+                    <div class="media">
+                      <label>E-mail</label>
+                      <p>adelowopaul98@gmail.com</p>
+                    </div>
+                    <div class="media">
+                      <label>Skype</label>
+                      <p>skype.0404</p>
+                    </div>
+                    <div class="media">
+                      <label>Freelance</label>
+                      <p>Available</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- ///btn download//// -->
+                <a href="" class="work m-btn download">DOWNLOAD CV</a>
+
+                <!--  -->
+              </article>
+            </div>
+          </div>
+          <!--  -->
+        </section>
+        <!-- 2 END -->
+
+        <!-- /////HERO-3///// -->
+        <section class="hero-sec-3" id="SERVICES">
+          <div class="section-service">
+            <div class="me-section">
+              <h3>MY SERVICES</h3>
+              <hr />
+              <p class="hero-p h-about">
+                A LEAD UX & UI DESIGNER BASED IN NIGERIA
+              </p>
+            </div>
+            <!--  -->
+            <article class="services">
+              <!--  -->
+
+              <div class="feature-box-1">
+                <div class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                    style="width: 34px"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25"
+                    />
+                  </svg>
+                </div>
+                <div class="feature-content">
+                  <h5 id="content-h5">Unique design</h5>
+                  <p>
+                    I design and develop services for customers of all sizes,
+                    specializing in creating stylish, modern websites.
+                  </p>
+                </div>
+              </div>
+
+              <!--  -->
+              <div class="feature-box-1">
+                <div class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                    style="width: 34px"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6 6h.008v.008H6V6z"
+                    />
+                  </svg>
+                </div>
+                <div class="feature-content">
+                  <h5 id="content-h5">Different Layout</h5>
+                  <p>
+                    I design and develop services for customers of all sizes,
+                    specializing in creating stylish, modern websites.
+                  </p>
+                </div>
+              </div>
+              <!--  -->
+              <div class="feature-box-1">
+                <div class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                    style="width: 34px"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z"
+                    />
+                  </svg>
+                </div>
+                <div class="feature-content">
+                  <h5 id="content-h5">Make it Simple</h5>
+                  <p>
+                    I design and develop services for customers of all sizes,
+                    specializing in creating stylish, modern websites.
+                  </p>
+                </div>
+              </div>
+              <!--  -->
+              <div class="feature-box-1">
+                <div class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                    style="width: 34px"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M10.5 19.5h3m-6.75 2.25h10.5a2.25 2.25 0 002.25-2.25v-15a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 4.5v15a2.25 2.25 0 002.25 2.25z"
+                    />
+                  </svg>
+                </div>
+                <div class="feature-content">
+                  <h5 id="content-h5">Responsiveness</h5>
+                  <p>
+                    I design and develop services for customers of all sizes,
+                    specializing in creating stylish, modern websites.
+                  </p>
+                </div>
+              </div>
+              <!--  -->
+
+              <div class="feature-box-1">
+                <div class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="34"
+                    height="34"
+                    viewBox="0 0 24 24"
+                    id="s-icon"
+                    style="fill: rgb(217, 131, 46)"
+                  >
+                    <circle cx="12" cy="12" r="3"></circle>
+                    <path
+                      d="M13 4.069V2h-2v2.069A8.008 8.008 0 0 0 4.069 11H2v2h2.069A8.007 8.007 0 0 0 11 19.931V22h2v-2.069A8.007 8.007 0 0 0 19.931 13H22v-2h-2.069A8.008 8.008 0 0 0 13 4.069zM12 18c-3.309 0-6-2.691-6-6s2.691-6 6-6 6 2.691 6 6-2.691 6-6 6z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="feature-content">
+                  <h5 id="content-h5">Testing for Perfection</h5>
+                  <p>
+                    I design and develop services for customers of all sizes,
+                    specializing in creating stylish, modern websites.
+                  </p>
+                </div>
+              </div>
+              <!--  -->
+
+              <div class="feature-box-1">
+                <div class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                    style="width: 34px"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"
+                    />
+                  </svg>
+                </div>
+                <div class="feature-content">
+                  <h5 id="content-h5">Project Manager</h5>
+                  <p>
+                    I design and develop services for customers of all sizes,
+                    specializing in creating stylish, modern websites.
+                  </p>
+                </div>
+              </div>
+              <!--  -->
+            </article>
+          </div>
+          <!--  -->
+        </section>
+        <!-- /////HERO-3 END///// -->
+
+        <!-- /////HERO-4 ///// -->
+        <section class="hero-sec-4" id="PORTFOLIO">
+          <div class="section-service" id="SectionServices">
+            <div class="me-section">
+              <h3>LATEST WORKS</h3>
+              <hr />
+              <p class="hero-p h-about">
+                A LEAD UX & UI DESIGNER BASED IN NIGERIA
+              </p>
+            </div>
+            <!--  -->
+            <article class="service">
+              <!--  -->
+              <a href="logolpsum/logo.html">
+                <div class="bg-cont">
+                  <div class="feature-box-2 el-img"></div>
+
+                  <div class="overlay">
+                    <h5 class="overlay-h5">Developer Design</h5>
+                    <p>Using html and css</p>
+                  </div>
+                </div>
+              </a>
+              <!--  -->
+              <a href="hero/hero.html">
+                <div class="bg-cont-2">
+                  <div class="feature-box-2 el-2-img"></div>
+                  <div class="overlay-2">
+                    <h5 class="">Developer Design</h5>
+                    <p>Using html and css</p>
+                  </div>
+                </div>
+              </a>
+              <!--  -->
+              <a href="07-Omnifood-Desktop/index.html">
+                <div class="bg-cont-2">
+                  <div class="feature-box-2 el-3-img"></div>
+                  <div class="overlay-2">
+                    <h5 class="">Developer Design</h5>
+                    <p>Using html and css</p>
+                  </div>
+                </div>
+              </a>
+              <!--  -->
+              <a
+                href="https://www.figma.com/file/wV1128XugraHhxpnpb508i/Untitled?type=design&node-id=1%3A2&mode=design&t=pvpZAvAPtVz4JKa0-1"
+              >
+                <div class="bg-cont-2">
+                  <div class="feature-box-2 el-4-img"></div>
+                  <div class="overlay-2">
+                    <h5 class="">Developer Design</h5>
+                    <p>Using Figma</p>
+                  </div>
+                </div>
+              </a>
+
+              <!--  -->
+            </article>
+          </div>
+          <!--  -->
+        </section>
+        <!-- /////HERO-4 END///// -->
+
+        <!-- /////HERO-5///// -->
+        <section class="hero-sec-5">
+          <div class="section-testimonial section-service" id="testimonial-pt">
+            <div class="me-section">
+              <h3>TESTIMONIAL</h3>
+              <hr />
+              <p class="hero-p h-about">
+                A LEAD UX & UI DESIGNER BASED IN NIGERIA
+              </p>
+            </div>
+            <!--  -->
+            <div class="testimonial-img">
+              <img src="img/testimonial2.png" alt="" width="100%" />
+            </div>
+          </div>
+        </section>
+        <!-- /////HERO-5 END///// -->
+
+        <!-- /////HERO-6 ///// -->
+        <section class="hero-sec-6" id="BLOG">
+          <div class="section-testimonial section-service">
+            <div class="me-section" id="header-blog">
+              <h3>LATEST BLOGS</h3>
+              <hr />
+              <p class="hero-p h-about">
+                A LEAD UX & UI DESIGNER BASED IN NIGERIA
+              </p>
+            </div>
+
+            <div class="blog-grid">
+              <div class="blog-card" id="blog-mb">
+                <img src="img/blog-1.jpg" alt="" class="blog-img" />
+                <!--  -->
+                <div class="blog-info">
+                  <button class="meta-button">27 August 2023</button>
+                  <h5 class="text-h5">Make your Marketing website</h5>
+                  <p class="blog-text">
+                    Lorem ipsum dolor sit amet, <br />
+                    consectetur adipisicing elit.
+                  </p>
+                  <a href="" class="read-link">Read More</a>
+                </div>
+                <!--  -->
+              </div>
+              <!--  -->
+              <div class="blog-card" id="blog-mb">
+                <img src="img/blog-2.jpg" alt="" class="blog-img" />
+                <!--  -->
+                <div class="blog-info">
+                  <button class="meta-button">27 August 2023</button>
+                  <h5 class="text-h5">Make your Marketing website</h5>
+                  <p class="blog-text">
+                    Lorem ipsum dolor sit amet, <br />
+                    consectetur adipisicing elit.
+                  </p>
+                  <a href="" class="read-link">Read More</a>
+                </div>
+                <!--  -->
+              </div>
+              <!--  -->
+              <div class="blog-card">
+                <img src="img/blog-3.jpg" alt="" class="blog-img" />
+                <!--  -->
+                <div class="blog-info">
+                  <button class="meta-button">27 August 2023</button>
+                  <h5 class="text-h5">Make your Marketing website</h5>
+                  <p class="blog-text">
+                    Lorem ipsum dolor sit amet, <br />
+                    consectetur adipisicing elit.
+                  </p>
+                  <a href="" class="read-link">Read More</a>
+                </div>
+                <!--  -->
+              </div>
+              <!--  -->
+            </div>
+            <!--  -->
+          </div>
+        </section>
+        <!-- /////HERO-6 END///// -->
+
+        <!-- /////HERO-7///// -->
+        <section class="hero-sec-7" id="CONTACT">
+          <div class="section-testimonial section-service">
+            <div class="me-section">
+              <h3>GET IN TOUCH</h3>
+              <hr />
+              <p class="hero-p h-about">
+                A LEAD UX & UI DESIGNER BASED IN NIGERIA
+              </p>
+            </div>
+            <!--  -->
+            <div class="col-form">
+              <div class="contact-form">
+                <h4>SAY SOMETHING</h4>
+                <form action="">
+                  <div class="col-2">
+                    <input type="text" placeholder="Name *" class="input-col" />
+                    <input
+                      type="email"
+                      placeholder="Email *"
+                      class="input-col"
+                    />
+                  </div>
+                  <input type="text" placeholder="Subject" /> <br />
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    cols="50"
+                    placeholder="Your message..."
+                  ></textarea
+                  ><br />
+                  <button type="submit" class="work m-btn">SEND MESSAGE</button>
+                </form>
+              </div>
+              <!-- form2 -->
+              <div class="contact-form-2">
+                <div class="media-body">
+                  <!-- 1 -->
+                  <div class="icon-info">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 34 34"
+                      stroke-width="1.2"
+                      stroke="#fff"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                      />
+                    </svg>
+                  </div>
+                  <!--  -->
+                  <div class="info">
+                    <h6 class="">Dev Address</h6>
+
+                    <p>
+                      Joju Express Road, Sango Ota<br />Ogun State Nigeria<br />
+                    </p>
+                  </div>
+                </div>
+                <!-- 1 -->
+                <div class="media-body">
+                  <!-- 2 -->
+                  <div class="icon-info">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 34 34"
+                      stroke-width="1.5"
+                      stroke="#fff"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
+                      />
+                    </svg>
+                  </div>
+                  <!--  -->
+                  <div class="info">
+                    <h6 class="">Dev Phone</h6>
+                    <a href="tel:+2348070837156">
+                      <p>
+                        Office: +234 44444 44444<br />Office: +234 44444
+                        44444<br />
+                      </p>
+                    </a>
+                  </div>
+                  <!--  -->
+                </div>
+                <!-- 2 -->
+
+                <div class="media-body">
+                  <!-- 3 -->
+                  <div class="icon-info">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 40 4o"
+                      stroke-width="1.5"
+                      stroke="#fff"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                      />
+                    </svg>
+                  </div>
+                  <!--  -->
+                  <div class="info">
+                    <h6 class="">Dev Mail</h6>
+                    <a href="mailto:adelowopaul@gmail.com">
+                      <p>
+                        adelowopaul98gmail.com<br />contact@pauldammy.com<br />
+                      </p>
+                    </a>
+                  </div>
+                  <!--  -->
+                </div>
+                <!-- 3 -->
+                <!--  -->
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- /////HERO-7 END///// -->
+
+        <!--///////////// FOOTER/////////// -->
+        <div class="section-footer">
+          <div class="footer-icon">
+            <!-- 1 -->
+            <span class="social-footer">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="1.3em"
+                viewBox="0 0 320 512"
+                style="fill: rgba(255, 255, 255, 0.5)"
+              >
+                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                />
+              </svg>
+            </span>
+            <!-- 2 -->
+            <span class="social-footer">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="1.3em"
+                viewBox="0 0 448 512"
+                style="fill: rgba(255, 255, 255, 0.5)"
+              >
+                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+                />
+              </svg>
+            </span>
+            <!--  -->
+            <!-- 3 -->
+            <span class="social-footer">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="1.3em"
+                viewBox="0 0 448 512"
+                style="fill: rgba(255, 255, 255, 0.5)"
+              >
+                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                />
+              </svg>
+            </span>
+            <!-- 4 -->
+            <span class="social-footer">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="1.3em"
+                viewBox="0 0 512 512"
+                style="fill: rgba(255, 255, 255, 0.5)"
+              >
+                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                />
+              </svg>
+            </span>
+          </div>
+          <!--  -->
+          <div>
+            <p>&copy; 2023 Copyright all right reserved</p>
+          </div>
+        </div>
+        <!--///////////// FOOTER END/////////// -->
+      </div>
+      <!-- ///////////HEADER-RIGHT END////////// -->
+    </div>
+
+    <!-- ///////////SCRIPT/////////// -->
+    <script src="script.js"></script>
+    <script src="scripts.js"></script>
+    <!-- ///////////SCRIPT/////////// -->
+  </body>
+</html>
